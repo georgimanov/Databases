@@ -1,0 +1,12 @@
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.HW.exe.config
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\obj\Debug\EntityFramework.HW.csprojResolveAssemblyReference.cache
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.HW.exe
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.HW.pdb
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.Data.dll
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.dll
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.SqlServer.dll
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.Data.pdb
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.xml
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\bin\Debug\EntityFramework.SqlServer.xml
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\obj\Debug\EntityFramework.HW.exe
+D:\SoftUni\Level #3\DB Applications\1.Entity-Framework\Entity-Framework-HW\EntityFramework.HW\obj\Debug\EntityFramework.HW.pdb
