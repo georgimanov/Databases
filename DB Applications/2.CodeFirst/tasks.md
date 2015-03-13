@@ -1,5 +1,5 @@
 #Homework: Entity Framework
-==========================
+---------------------------
 This document defines the homework assignments from the "Database Applications" Course @ Software University. Please submit as homework a single zip / rar / 7z archive holding the solutions (source code) of all below described problems.
 
 ##Problem 1.	Create a Database for Student System using Code First
