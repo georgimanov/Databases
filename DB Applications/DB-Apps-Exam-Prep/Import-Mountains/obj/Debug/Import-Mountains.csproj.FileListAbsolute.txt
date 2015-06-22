@@ -1,0 +1,11 @@
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\bin\Debug\Import-Mountains.exe.config
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\bin\Debug\Import-Mountains.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\bin\Debug\Import-Mountains.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\bin\Debug\Newtonsoft.Json.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\obj\Debug\Import-Mountains.csprojResolveAssemblyReference.cache
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\obj\Debug\Import-Mountains.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\obj\Debug\Import-Mountains.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\bin\Debug\Mountains-Code-First.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\bin\Debug\EntityFramework.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\bin\Debug\Mountains-Code-First.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Import-Mountains\bin\Debug\EntityFramework.xml

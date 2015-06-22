@@ -1,0 +1,12 @@
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\Export-Rivers-As-JSON.exe.config
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\Export-Rivers-As-JSON.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\Export-Rivers-As-JSON.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\EF-Mapping.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\EntityFramework.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\EntityFramework.SqlServer.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\EF-Mapping.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\EntityFramework.xml
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\bin\Debug\EntityFramework.SqlServer.xml
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\obj\Debug\Export-Rivers-As-JSON.csprojResolveAssemblyReference.cache
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\obj\Debug\Export-Rivers-As-JSON.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Export-Rivers-As-JSON\obj\Debug\Export-Rivers-As-JSON.pdb

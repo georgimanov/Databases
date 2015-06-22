@@ -1,0 +1,10 @@
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\bin\Debug\Mountains-Code-First.exe.config
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\obj\Debug\Mountains-Code-First.csprojResolveAssemblyReference.cache
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\bin\Debug\Mountains-Code-First.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\bin\Debug\Mountains-Code-First.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\bin\Debug\EntityFramework.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\bin\Debug\EntityFramework.SqlServer.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\bin\Debug\EntityFramework.xml
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\bin\Debug\EntityFramework.SqlServer.xml
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\obj\Debug\Mountains-Code-First.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Mountains-Code-First\obj\Debug\Mountains-Code-First.pdb

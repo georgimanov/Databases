@@ -1,0 +1,12 @@
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\Rivers-By-Country.exe.config
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\Rivers-By-Country.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\Rivers-By-Country.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\EF-Mapping.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\EntityFramework.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\EntityFramework.SqlServer.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\EF-Mapping.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\EntityFramework.xml
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\bin\Debug\EntityFramework.SqlServer.xml
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\obj\Debug\Rivers-By-Country.csprojResolveAssemblyReference.cache
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\obj\Debug\Rivers-By-Country.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\Rivers-By-Country\obj\Debug\Rivers-By-Country.pdb

@@ -1,0 +1,9 @@
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\bin\Debug\EF-Mapping.exe.config
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\bin\Debug\EF-Mapping.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\bin\Debug\EF-Mapping.pdb
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\bin\Debug\EntityFramework.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\bin\Debug\EntityFramework.SqlServer.dll
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\bin\Debug\EntityFramework.xml
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\bin\Debug\EntityFramework.SqlServer.xml
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\obj\Debug\EF-Mapping.exe
+D:\SoftUni\DB Apps\Prep\DB-Apps-Exam-Prep\EF-Mapping\obj\Debug\EF-Mapping.pdb
