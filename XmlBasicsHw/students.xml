@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <student>
+    <name>Pesho</name>
+    <sex>m</sex>
+    <birthDate>2015-10-04</birthDate>
+    <phone>123123</phone>
+    <email>pesho@gmail.com</email>
+    <course>1</course>
+    <facultyNumber>TA123</facultyNumber>
+    <takenExams>
+      <exam>
+        <name>C#</name>
+        <tutor>Kenov</tutor>
+        <score>10000</score>
+      </exam>
+      <exam>
+        <name>HTML</name>
+        <tutor>Minkov</tutor>
+        <score>10000</score>
+      </exam>
+    </takenExams>
+  </student>
+  <student>
+    <name>Gosho</name>
+    <sex>m</sex>
+    <birthDate>2015-10-04</birthDate>
+    <phone>123123</phone>
+    <email>gosho@gmail.com</email>
+    <course>2</course>
+    <facultyNumber>TA124</facultyNumber>
+    <takenExams>
+      <exam>
+        <name>C#</name>
+        <tutor>Kenov</tutor>
+        <score>10000</score>
+      </exam>
+      <exam>
+        <name>HTML</name>
+        <tutor>Minkov</tutor>
+        <score>10000</score>
+      </exam>
+    </takenExams>
+  </student>
+</students>
