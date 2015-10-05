@@ -1,1 +1,7 @@
 D:\Telerik\DB\XmlBasicsHw\XmlBasicsHw\bin\Debug\XmlBasicsHw.exe.config
+D:\Git\Databases\XmlBasicsHw\XmlBasicsHw\bin\Debug\XmlBasicsHw.exe.config
+D:\Git\Databases\XmlBasicsHw\XmlBasicsHw\bin\Debug\XmlBasicsHw.exe
+D:\Git\Databases\XmlBasicsHw\XmlBasicsHw\bin\Debug\XmlBasicsHw.pdb
+D:\Git\Databases\XmlBasicsHw\XmlBasicsHw\obj\Debug\XmlBasicsHw.csprojResolveAssemblyReference.cache
+D:\Git\Databases\XmlBasicsHw\XmlBasicsHw\obj\Debug\XmlBasicsHw.exe
+D:\Git\Databases\XmlBasicsHw\XmlBasicsHw\obj\Debug\XmlBasicsHw.pdb

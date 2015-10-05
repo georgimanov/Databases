@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<students>
+<urn:students xmlns:urn="unr">
   <student>
     <name>Pesho</name>
     <sex>m</sex>
@@ -42,4 +42,4 @@
       </exam>
     </takenExams>
   </student>
-</students>
+</urn:students>

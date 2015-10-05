@@ -1,0 +1,30 @@
+﻿<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="name"/>
+        <xs:element type="xs:string" name="sex"/>
+        <xs:element type="xs:date" name="birthDate"/>
+        <xs:element type="xs:int" name="phone"/>
+        <xs:element type="xs:string" name="email"/>
+        <xs:element type="xs:byte" name="course"/>
+        <xs:element type="xs:string" name="facultyNumber"/>
+        <xs:element name="takenExams">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="exam" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="tutor"/>
+                    <xs:element type="xs:short" name="score"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
