@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0C1A3D6D-5ACA-468A-8F7C-9F7E300EA81B}"
 	ProjectSection(SolutionItems) = preProject
 		students.xml = students.xml
+		students.xsd = students.xsd
+		styles.xslt = styles.xslt
 	EndProjectSection
 EndProject
 Global
