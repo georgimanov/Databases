@@ -1,0 +1,12 @@
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\CompanySampleDataImporter.Importer.exe.config
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\CompanySampleDataImporter.Importer.exe
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\CompanySampleDataImporter.Importer.pdb
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\obj\Debug\CompanySampleDataImporter.Importer.csprojResolveAssemblyReference.cache
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\obj\Debug\CompanySampleDataImporter.Importer.exe
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\obj\Debug\CompanySampleDataImporter.Importer.pdb
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\CompanySampleDataImporter.Data.dll
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\EntityFramework.dll
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\CompanySampleDataImporter.Data.pdb
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\EntityFramework.xml
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Importer\bin\Debug\EntityFramework.SqlServer.xml

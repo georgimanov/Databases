@@ -1,0 +1,10 @@
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\bin\Debug\CompanySampleDataImporter.Data.dll.config
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\bin\Debug\CompanySampleDataImporter.Data.dll
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\bin\Debug\CompanySampleDataImporter.Data.pdb
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\bin\Debug\EntityFramework.dll
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\bin\Debug\EntityFramework.xml
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\obj\Debug\CompanySampleDataImporter.Data.csprojResolveAssemblyReference.cache
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\obj\Debug\CompanySampleDataImporter.Data.dll
+C:\Users\Georgi\Desktop\DbExamPrep\Problem2\CompanySampleDataImporter\CompanySampleDataImporter.Data\obj\Debug\CompanySampleDataImporter.Data.pdb
