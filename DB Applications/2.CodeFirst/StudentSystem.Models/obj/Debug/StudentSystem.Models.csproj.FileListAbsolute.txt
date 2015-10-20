@@ -1,5 +1,0 @@
-D:\SoftUni\Level #3\DB Applications\2.CodeFirst\HW-CodeFirst\StudentSystem.Models\bin\Debug\StudentSystem.Models.dll
-D:\SoftUni\Level #3\DB Applications\2.CodeFirst\HW-CodeFirst\StudentSystem.Models\bin\Debug\StudentSystem.Models.pdb
-D:\SoftUni\Level #3\DB Applications\2.CodeFirst\HW-CodeFirst\StudentSystem.Models\obj\Debug\StudentSystem.Models.csprojResolveAssemblyReference.cache
-D:\SoftUni\Level #3\DB Applications\2.CodeFirst\HW-CodeFirst\StudentSystem.Models\obj\Debug\StudentSystem.Models.dll
-D:\SoftUni\Level #3\DB Applications\2.CodeFirst\HW-CodeFirst\StudentSystem.Models\obj\Debug\StudentSystem.Models.pdb
