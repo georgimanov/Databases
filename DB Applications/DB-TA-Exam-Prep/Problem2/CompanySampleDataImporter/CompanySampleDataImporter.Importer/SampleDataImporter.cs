@@ -36,6 +36,8 @@
                     this._textWriter.Write(i.Message);
                     var db = new CompanyEntities();
                     i.Get(db, this._textWriter);
+
+                    this._textWriter.WriteLine();
                 });
         }
     }
