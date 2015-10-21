@@ -32,9 +32,23 @@
                     {
                         db.Departments.Add(new Departments()
                         {
-                            
+                            Name = RandomGenerator.GetRandomString(10, 50),
                         });
+
+                        if (i % 10 == 0)
+                        {
+                            tr.Write(".");
+                        }
+
+                        if (i % 100 == 0)
+                        {
+                            db.SaveChanges();
+                            db.Dispose();
+                            db = new CompanyEntities();
+                        }
                     }
+
+                    db.SaveChanges();
                 };
             }
         }

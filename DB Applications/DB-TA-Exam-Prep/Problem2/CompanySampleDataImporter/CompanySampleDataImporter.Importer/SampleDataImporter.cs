@@ -33,7 +33,7 @@
                 .ToList()
                 .ForEach(i =>
                 {
-                    _textWriter.Write(i.Message);
+                    this._textWriter.Write(i.Message);
                     var db = new CompanyEntities();
                     i.Get(db, this._textWriter);
                 });
