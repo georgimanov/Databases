@@ -39,6 +39,7 @@
             var month = GetRandomNumber(minDate.Month, maxDate.Month);
             var year = GetRandomNumber(minDate.Year, maxDate.Year);
 
+            // TODO: bug fix;
             if (day > 28)
             {
                 day = 28;
