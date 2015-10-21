@@ -6,7 +6,7 @@
     {
         static void Main()
         {
-            // 2:01:52
+            // 2:07:05
             SampleDataImporter.Create(Console.Out).Import();
         }
     }
