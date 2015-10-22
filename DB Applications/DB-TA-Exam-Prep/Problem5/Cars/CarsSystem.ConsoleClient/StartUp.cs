@@ -11,9 +11,11 @@
         {
             //MigrateDatabaseToLatestVersion<CarsSystemDbContext, Configuration>
             // new DropCreateDatabaseAlways<CarsSystemDbContext>()
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<CarsSystemDbContext, Configuration>());
+            // Database.SetInitializer(new MigrateDatabaseToLatestVersion<CarsSystemDbContext, Configuration>());
 
-            JsonCarsImporter.Import();
+            // JsonCarsImporter.Import();
+
+            XmlCarsSearcher.Search();
         }
     }
 }
