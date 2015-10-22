@@ -7,7 +7,7 @@
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(11)]
+        [MaxLength(25)]
         public string Model { get; set; }
 
         public TransmissionType TransmissionType { get; set; }

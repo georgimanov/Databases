@@ -1,22 +1,19 @@
 ﻿namespace CarsSystem.ConsoleClient
 {
     using System.Data.Entity;
-    using System.Linq;
 
     using CarsSystem.Data;
     using CarsSystem.Data.Migrations;
-
-    using CarSystem.Models;
 
     public class StartUp
     {
         static void Main(string[] args)
         {
+            //MigrateDatabaseToLatestVersion<CarsSystemDbContext, Configuration>
+            // new DropCreateDatabaseAlways<CarsSystemDbContext>()
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<CarsSystemDbContext, Configuration>());
 
-            var db = new CarsSystemDbContext();
-
-            db.Cars.Count();
+            JsonCarsImporter.Import();
         }
     }
 }
