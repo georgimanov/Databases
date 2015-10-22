@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8CB3A72F-0382-4D20-B074-75347AF04703}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{D41E871B-209F-4314-AF9E-EEE93F60AD46}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CarSystem.Models</RootNamespace>
-    <AssemblyName>CarSystem.Models</AssemblyName>
+    <RootNamespace>CarsSystem.ConsoleClient</RootNamespace>
+    <AssemblyName>CarsSystem.ConsoleClient</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -46,16 +48,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Car.cs" />
-    <Compile Include="City.cs" />
-    <Compile Include="Dealer.cs" />
-    <Compile Include="Manufacturer.cs" />
+    <Compile Include="StartUp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TransmissionType.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CarsSystem.Data\CarsSystem.Data.csproj">
+      <Project>{c5de223d-4b81-45a7-aeef-d6a58f1fd956}</Project>
+      <Name>CarsSystem.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CarSystem.Models\CarSystem.Models.csproj">
+      <Project>{8cb3a72f-0382-4d20-b074-75347af04703}</Project>
+      <Name>CarSystem.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarSystem.Models", "CarSystem.Models\CarSystem.Models.csproj", "{8CB3A72F-0382-4D20-B074-75347AF04703}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsSystem.Data", "CarsSystem.Data\CarsSystem.Data.csproj", "{C5DE223D-4B81-45A7-AEEF-D6A58F1FD956}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarsSystem.ConsoleClient", "CarsSystem.ConsoleClient\CarsSystem.ConsoleClient.csproj", "{D41E871B-209F-4314-AF9E-EEE93F60AD46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{8CB3A72F-0382-4D20-B074-75347AF04703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB3A72F-0382-4D20-B074-75347AF04703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB3A72F-0382-4D20-B074-75347AF04703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DE223D-4B81-45A7-AEEF-D6A58F1FD956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DE223D-4B81-45A7-AEEF-D6A58F1FD956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DE223D-4B81-45A7-AEEF-D6A58F1FD956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DE223D-4B81-45A7-AEEF-D6A58F1FD956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D41E871B-209F-4314-AF9E-EEE93F60AD46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D41E871B-209F-4314-AF9E-EEE93F60AD46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D41E871B-209F-4314-AF9E-EEE93F60AD46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D41E871B-209F-4314-AF9E-EEE93F60AD46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
