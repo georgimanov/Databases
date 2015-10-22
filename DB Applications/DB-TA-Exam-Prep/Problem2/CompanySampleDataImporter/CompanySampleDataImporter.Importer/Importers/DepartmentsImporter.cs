@@ -7,7 +7,7 @@
 
     public class DepartmentsImporter : IImporter
     {
-        private const int NumberOfDepartments = 100;
+        private const int NumberOfDepartments = 10; // 100
 
         public string Message
         {

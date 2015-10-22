@@ -1,0 +1,41 @@
+USE Company
+GO
+
+Create Proc dbo.usp_CreateCachedTableForReports
+AS
+	Create Table ReportsCache
+	(
+		EmployeeName nvarchar(41),
+		DepartmentName nvarchar(50),
+		ProjectName nvarchar(50),
+		StartDate date,
+		EndDate date,
+		TotalReports int
+	)
+Go
+
+Exec dbo.usp_CreateCachedTableForReports
+go
+
+Create proc dbo.usp_InsertIntoCachedReports
+as 
+	DELETE FROM dbo.ReportsCache
+	Insert into dbo.ReportsCache
+	SELECT 
+	E.FirstName + ' ' + E.LastName AS FULLNAME, 
+	P.Name AS ProjectName, 
+	D.Name AS DepartmentsName, 
+	pe.StartDate, 
+	pe.EndDate,
+	(select count(id) from Reports
+		where time > StartDate and time < EndDate) 
+	as TotalReports
+	FROM ProjectsEmployees AS PE
+		JOIN Employees AS E ON E.ID = PE.EmployeeId
+		JOIN Projects AS P ON P.ID = PE.ProjectId
+		JOIN Departments AS D ON D.ID = E.DepartmentId
+	ORDER BY E.Id ASC, P.ID ASC
+Go
+
+Exec dbo.usp_InsertIntoCachedReports
+GO

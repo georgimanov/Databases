@@ -1,0 +1,39 @@
+use Company
+SELECT FirstName + ' ' + LastName as FullName , YearSalary
+FROM Employees
+where YearSalary <= 150000 and YearSalary >= 100000
+order by YearSalary asc
+go
+
+use Company
+select  D.Id AS DepartmentId, COUNT(E.Id) as EmpoloyeesInDepartment
+from Employees as E
+right JOIN Departments AS D
+ON E.DepartmentId = D.Id
+WHERE D.Id IS NOT NULL
+GROUP BY D.ID
+ORDER BY COUNT(E.ID) desc
+go
+
+USE Company
+SELECT COUNT(ID)
+FROM Employees
+WHERE DepartmentId IS NOT NULL
+GO
+
+USE Company
+SELECT 
+	E.FirstName + ' ' + E.LastName AS FULLNAME, 
+	P.Name AS ProjectName, 
+	D.Name AS DepartmentsName, 
+	pe.StartDate, 
+	pe.EndDate,
+	(select count(id) from Reports
+		where time > StartDate and time < EndDate) 
+	as reports
+FROM ProjectsEmployees AS PE
+	JOIN Employees AS E ON E.ID = PE.EmployeeId
+	JOIN Projects AS P ON P.ID = PE.ProjectId
+	JOIN Departments AS D ON D.ID = E.DepartmentId
+ORDER BY E.Id ASC, P.ID ASC
+GO

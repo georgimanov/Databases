@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CompanySampleDataImporter.Importer.Importers
+﻿namespace CompanySampleDataImporter.Importer.Importers
 {
+    using System;
     using System.IO;
+    using System.Linq;
 
     using CompanySampleDataImporter.Data;
     using CompanySampleDataImporter.Importer.Importers.Contracts;

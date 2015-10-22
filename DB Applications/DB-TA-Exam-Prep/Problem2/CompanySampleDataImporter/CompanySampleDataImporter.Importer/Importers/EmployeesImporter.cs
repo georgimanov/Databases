@@ -8,7 +8,7 @@
 
     public class EmployeesImporter : IImporter
     {
-        private const int NumberOfEmployees = 5000;
+        private const int NumberOfEmployees = 500; //500
 
         public string Message
         {
