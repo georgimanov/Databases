@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PetStoreModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Breeds">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Colors">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Countries">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PetProducts">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="25" Nullable="false" />
+          <Property Name="Price" Type="money" Nullable="false" />
+          <Property Name="CategoryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PetProductsSpecies">
+          <Key>
+            <PropertyRef Name="PetProductId" />
+            <PropertyRef Name="SpecieId" />
+          </Key>
+          <Property Name="PetProductId" Type="int" Nullable="false" />
+          <Property Name="SpecieId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Pets">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BirthDate" Type="datetime" Nullable="false" />
+          <Property Name="Price" Type="money" Nullable="false" />
+          <Property Name="ColorId" Type="int" Nullable="false" />
+          <Property Name="SpecieId" Type="int" Nullable="false" />
+          <Property Name="BreedId" Type="int" />
+        </EntityType>
+        <EntityType Name="Species">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="OriginCountryId" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_PetProducts_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="PetProducts" Type="Self.PetProducts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PetProducts">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PetProductsSpecies_PetProducts">
+          <End Role="PetProducts" Type="Self.PetProducts" Multiplicity="1" />
+          <End Role="PetProductsSpecies" Type="Self.PetProductsSpecies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PetProducts">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PetProductsSpecies">
+              <PropertyRef Name="PetProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PetProductsSpecies_Species">
+          <End Role="Species" Type="Self.Species" Multiplicity="1" />
+          <End Role="PetProductsSpecies" Type="Self.PetProductsSpecies" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Species">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PetProductsSpecies">
+              <PropertyRef Name="SpecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pets_Breeds1">
+          <End Role="Breeds" Type="Self.Breeds" Multiplicity="0..1" />
+          <End Role="Pets" Type="Self.Pets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Breeds">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pets">
+              <PropertyRef Name="BreedId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pets_Colors">
+          <End Role="Colors" Type="Self.Colors" Multiplicity="1" />
+          <End Role="Pets" Type="Self.Pets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Colors">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pets">
+              <PropertyRef Name="ColorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pets_Species">
+          <End Role="Species" Type="Self.Species" Multiplicity="1" />
+          <End Role="Pets" Type="Self.Pets" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Species">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pets">
+              <PropertyRef Name="SpecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Species_Countries">
+          <End Role="Countries" Type="Self.Countries" Multiplicity="1" />
+          <End Role="Species" Type="Self.Species" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Species">
+              <PropertyRef Name="OriginCountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PetStoreModelStoreContainer">
+          <EntitySet Name="Breeds" EntityType="Self.Breeds" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Colors" EntityType="Self.Colors" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Countries" EntityType="Self.Countries" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PetProducts" EntityType="Self.PetProducts" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PetProductsSpecies" EntityType="Self.PetProductsSpecies" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Pets" EntityType="Self.Pets" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Species" EntityType="Self.Species" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_PetProducts_Category" Association="Self.FK_PetProducts_Category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="PetProducts" EntitySet="PetProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PetProductsSpecies_PetProducts" Association="Self.FK_PetProductsSpecies_PetProducts">
+            <End Role="PetProducts" EntitySet="PetProducts" />
+            <End Role="PetProductsSpecies" EntitySet="PetProductsSpecies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PetProductsSpecies_Species" Association="Self.FK_PetProductsSpecies_Species">
+            <End Role="Species" EntitySet="Species" />
+            <End Role="PetProductsSpecies" EntitySet="PetProductsSpecies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pets_Breeds1" Association="Self.FK_Pets_Breeds1">
+            <End Role="Breeds" EntitySet="Breeds" />
+            <End Role="Pets" EntitySet="Pets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pets_Colors" Association="Self.FK_Pets_Colors">
+            <End Role="Colors" EntitySet="Colors" />
+            <End Role="Pets" EntitySet="Pets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pets_Species" Association="Self.FK_Pets_Species">
+            <End Role="Species" EntitySet="Species" />
+            <End Role="Pets" EntitySet="Pets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Species_Countries" Association="Self.FK_Species_Countries">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="Species" EntitySet="Species" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PetStoreModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Breed">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Pets" Relationship="Self.FK_Pets_Breeds1" FromRole="Breeds" ToRole="Pets" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="PetProducts" Relationship="Self.FK_PetProducts_Category" FromRole="Category" ToRole="PetProducts" />
+        </EntityType>
+        <EntityType Name="Color">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Pets" Relationship="Self.FK_Pets_Colors" FromRole="Colors" ToRole="Pets" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Species" Relationship="Self.FK_Species_Countries" FromRole="Countries" ToRole="Species" />
+        </EntityType>
+        <EntityType Name="PetProduct">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="25" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Category" Relationship="Self.FK_PetProducts_Category" FromRole="PetProducts" ToRole="Category" />
+          <NavigationProperty Name="Species" Relationship="Self.PetProductsSpecies" FromRole="PetProducts" ToRole="Species" />
+        </EntityType>
+        <EntityType Name="Pet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BirthDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Price" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="ColorId" Type="Int32" Nullable="false" />
+          <Property Name="SpecieId" Type="Int32" Nullable="false" />
+          <Property Name="BreedId" Type="Int32" />
+          <NavigationProperty Name="Breed" Relationship="Self.FK_Pets_Breeds1" FromRole="Pets" ToRole="Breeds" />
+          <NavigationProperty Name="Color" Relationship="Self.FK_Pets_Colors" FromRole="Pets" ToRole="Colors" />
+          <NavigationProperty Name="Species" Relationship="Self.FK_Pets_Species" FromRole="Pets" ToRole="Species" />
+        </EntityType>
+        <EntityType Name="Species">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="OriginCountryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Country" Relationship="Self.FK_Species_Countries" FromRole="Species" ToRole="Countries" />
+          <NavigationProperty Name="Pets" Relationship="Self.FK_Pets_Species" FromRole="Species" ToRole="Pets" />
+          <NavigationProperty Name="PetProducts" Relationship="Self.PetProductsSpecies" FromRole="Species" ToRole="PetProducts" />
+        </EntityType>
+        <Association Name="FK_Pets_Breeds1">
+          <End Role="Breeds" Type="Self.Breed" Multiplicity="0..1" />
+          <End Role="Pets" Type="Self.Pet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Breeds">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pets">
+              <PropertyRef Name="BreedId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PetProducts_Category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="PetProducts" Type="Self.PetProduct" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="PetProducts">
+              <PropertyRef Name="CategoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pets_Colors">
+          <End Role="Colors" Type="Self.Color" Multiplicity="1" />
+          <End Role="Pets" Type="Self.Pet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Colors">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pets">
+              <PropertyRef Name="ColorId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Species_Countries">
+          <End Role="Countries" Type="Self.Country" Multiplicity="1" />
+          <End Role="Species" Type="Self.Species" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Countries">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Species">
+              <PropertyRef Name="OriginCountryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Pets_Species">
+          <End Role="Species" Type="Self.Species" Multiplicity="1" />
+          <End Role="Pets" Type="Self.Pet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Species">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Pets">
+              <PropertyRef Name="SpecieId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="PetProductsSpecies">
+          <End Role="PetProducts" Type="Self.PetProduct" Multiplicity="*" />
+          <End Role="Species" Type="Self.Species" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="PetStoreEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Breeds" EntityType="Self.Breed" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Colors" EntityType="Self.Color" />
+          <EntitySet Name="Countries" EntityType="Self.Country" />
+          <EntitySet Name="PetProducts" EntityType="Self.PetProduct" />
+          <EntitySet Name="Pets" EntityType="Self.Pet" />
+          <EntitySet Name="Species" EntityType="Self.Species" />
+          <AssociationSet Name="FK_Pets_Breeds1" Association="Self.FK_Pets_Breeds1">
+            <End Role="Breeds" EntitySet="Breeds" />
+            <End Role="Pets" EntitySet="Pets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PetProducts_Category" Association="Self.FK_PetProducts_Category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="PetProducts" EntitySet="PetProducts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pets_Colors" Association="Self.FK_Pets_Colors">
+            <End Role="Colors" EntitySet="Colors" />
+            <End Role="Pets" EntitySet="Pets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Species_Countries" Association="Self.FK_Species_Countries">
+            <End Role="Countries" EntitySet="Countries" />
+            <End Role="Species" EntitySet="Species" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Pets_Species" Association="Self.FK_Pets_Species">
+            <End Role="Species" EntitySet="Species" />
+            <End Role="Pets" EntitySet="Pets" />
+          </AssociationSet>
+          <AssociationSet Name="PetProductsSpecies" Association="Self.PetProductsSpecies">
+            <End Role="PetProducts" EntitySet="PetProducts" />
+            <End Role="Species" EntitySet="Species" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PetStoreModelStoreContainer" CdmEntityContainer="PetStoreEntities">
+          <EntitySetMapping Name="Breeds">
+            <EntityTypeMapping TypeName="PetStoreModel.Breed">
+              <MappingFragment StoreEntitySet="Breeds">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="PetStoreModel.Category">
+              <MappingFragment StoreEntitySet="Category">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Colors">
+            <EntityTypeMapping TypeName="PetStoreModel.Color">
+              <MappingFragment StoreEntitySet="Colors">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Countries">
+            <EntityTypeMapping TypeName="PetStoreModel.Country">
+              <MappingFragment StoreEntitySet="Countries">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PetProducts">
+            <EntityTypeMapping TypeName="PetStoreModel.PetProduct">
+              <MappingFragment StoreEntitySet="PetProducts">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pets">
+            <EntityTypeMapping TypeName="PetStoreModel.Pet">
+              <MappingFragment StoreEntitySet="Pets">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+                <ScalarProperty Name="SpecieId" ColumnName="SpecieId" />
+                <ScalarProperty Name="BreedId" ColumnName="BreedId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Species">
+            <EntityTypeMapping TypeName="PetStoreModel.Species">
+              <MappingFragment StoreEntitySet="Species">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="OriginCountryId" ColumnName="OriginCountryId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="PetProductsSpecies" TypeName="PetStoreModel.PetProductsSpecies" StoreEntitySet="PetProductsSpecies">
+            <EndProperty Name="PetProducts">
+              <ScalarProperty Name="Id" ColumnName="PetProductId" />
+            </EndProperty>
+            <EndProperty Name="Species">
+              <ScalarProperty Name="Id" ColumnName="SpecieId" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

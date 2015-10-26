@@ -1,0 +1,6 @@
+SELECT Species.Name as SpeciesName, COUNT(PetProducts.Id) as ProductsCount
+FROM PetProductsSpecies
+JOIN Species on PetProductsSpecies.SpecieId = Species.Id
+JOIN PetProducts on PetProductsSpecies.PetProductId = PetProducts.Id
+GROUP BY (Species.Name)
+ORDER BY ProductsCount ASC

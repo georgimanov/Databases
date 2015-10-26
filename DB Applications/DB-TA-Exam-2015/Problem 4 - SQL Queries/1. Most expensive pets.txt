@@ -1,0 +1,13 @@
+SELECT top(5) p.Price, BreedId, p.BirthDate
+FROM Pets as P
+WHERE Year(BirthDate) >= 2012
+ORDER by p.Price DESC
+
+
+-- had some problems with this table so this is the another query
+
+SELECT top(5) p.Price, b.Name as BreedName, p.BirthDate
+FROM Pets as P
+LEFT JOIN Breeds as B on B.Id = P.BreedId
+WHERE Year(BirthDate) >= 2012
+ORDER BY p.Price DESC

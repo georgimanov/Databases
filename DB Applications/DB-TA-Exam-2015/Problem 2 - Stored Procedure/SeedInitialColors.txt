@@ -1,0 +1,31 @@
+USE PetStore
+GO
+
+Create Proc dbo.usp_CreateColorsTableForReports
+AS
+	Create Table ColorsCache
+	(
+		Name nvarchar(10),
+	)
+Go
+
+Exec dbo.usp_CreateColorsTableForReports
+go
+
+Create proc dbo.usp_InsertIntoCachedReports
+as 
+	DELETE FROM dbo.ColorsCache
+	Insert into dbo.ColorsCache(name)
+	VALUES ('black')
+	Insert into dbo.ColorsCache(name)
+	Values ('white')
+	Insert into dbo.ColorsCache(name)
+	VALUES ('red')
+	Insert into dbo.ColorsCache(name)
+	VALUES ('mixed')
+
+	
+Go
+
+Exec dbo.usp_InsertIntoCachedReports
+GO
